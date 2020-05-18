@@ -4,6 +4,22 @@ def using_concat
   all_my_favs.concat(my_favorite_things,more_favs)
 end
 
+def using_insert(list_of_programming_languages, another_language)
+  list_of_programming_languages  = ["Ruby", "JavaScript", "Java", "C", "Objective C", "C++", "PHP"]
+  another_language = "Python"
+  new_array
+
+
+
+
+
+describe "using_insert" do 
+  before(:each) do 
+    @list_of_programming_languages = ["Ruby", "JavaScript", "Java", "C#", "Objective C", "C++", "PHP"]
+    @another_language = "Python"
+    @new_array = using_insert(@list_of_programming_languages, @another_language)
+  end
+
 
 
 def using_insert(array, element)
@@ -25,4 +41,7 @@ end
 def using_delete_at(array, interger)
   array.delete_at[0]
 end
+  
+  
+  
   
